@@ -1,4 +1,4 @@
-public class maxOfThreeNums {
+public class MaxOfThreeNums {
     public static int maxOfThreeNum(int a, int b, int c) {
 
         if(a > b) {
