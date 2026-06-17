@@ -1,0 +1,43 @@
+Collection Framework
+│
+├── List
+│   ├── ArrayList
+│   ├── LinkedList
+│
+├── Set
+│   ├── HashSet
+│   ├── TreeSet
+│
+└── Queue
+    ├── PriorityQueue
+
+Map (separate hierarchy)
+│
+├── HashMap
+├── TreeMap
+
+
+   What Is Collection Framework?
+   Collection Framework is:
+        A library of ready-made data structures provided by Java.
+
+
+        Why we need it ?
+        because for specific requirements if i want list structure or stack structure why should i make every data structure from
+        scratch instead java provides collection frameworks which has all data structures you want to use
+
+
+   What is List?
+   A List is simple ordered items collection in a way it is inserted and duplicated are allowed in list
+
+   What Is ArrayList?
+   A List implemented using an internal array.
+   main thing is array list is not fixed size it resize automatically
+
+   What is LinkedList?
+   A linked list is a linear data structure where elements are not stored in side-by-side memory locations.
+   Instead, it forms a chain of separate items called nodes,
+   where each node points to the next one using a reference or pointer.
+
+   [ Data | Next ] ---> [ Data | Next ] ---> [ Data | NULL ]
+
