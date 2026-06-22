@@ -1,43 +1,75 @@
 Collection Framework
-│
-├── List
-│   ├── ArrayList
-│   ├── LinkedList
-│
-├── Set
-│   ├── HashSet
-│   ├── TreeSet
-│
-└── Queue
-    ├── PriorityQueue
+ │
+ ├── List
+ │    ├── ArrayList
+ │    └── LinkedList
+ │
+ ├── Set
+ │    ├── HashSet
+ │    └── TreeSet
+ │
+ └── Queue
+      └── PriorityQueue
 
-Map (separate hierarchy)
-│
-├── HashMap
-├── TreeMap
+Map (Separate Hierarchy)
+ │
+ ├── HashMap
+ └── TreeMap
 
+------------------------------
+## What Is Collection Framework?
+Collection Framework is a library of ready-made data structures provided by Java.
+## Why we need it ?
+Because for specific requirements if i want list structure or stack structure why should i make
+every data structure from scratch instead java provides collection frameworks which has all data structures you want to use.
+------------------------------
+## What is List?
+A List is simple ordered items collection in a way it is inserted and duplicated are allowed in list.
+## What Is ArrayList?
+A List implemented using an internal array. main thing is array list is not fixed size it resize automatically.
+## What is LinkedList?
+A linked list is a linear data structure where elements are not stored in side-by-side memory locations.
+Instead, it forms a chain of separate items called nodes, where each node points to the next one using a reference or pointer.
 
-   What Is Collection Framework?
-   Collection Framework is:
-        A library of ready-made data structures provided by Java.
+[ Data | Next ] ---> [ Data | Next ] ---> [ Data | NULL ]
 
+------------------------------
+## What is Set?
+A Set is a collection that cannot contain duplicate items.
+If you try to add an item that is already there, it will just ignore it.
+## What Is HashSet?
+A Set that uses a hash table internally. Main thing is it does not keep any order of items.
+Elements can come out in a totally random order, but it is extremely fast for searching items.
+## What Is TreeSet?
+A Set that uses a tree structure internally.
+Main thing is it automatically stores its items in a sorted, ascending order.
+------------------------------
+## What is Queue?
+A Queue is a collection used to hold items before processing them.
+It follows the FIFO (First-In-First-Out) rule, meaning the first item you put in is the first item that comes out.
+## What Is PriorityQueue?
+A Queue where items are processed based on their priority, not just arrival time.
+By default, the smallest item always stays at the top of the queue and comes out first.
+------------------------------
+## What is Map?
+A Map is a completely separate structure that stores data in Key and Value pairs.
+You cannot have duplicate keys, and every key maps to exactly one value.
+## What Is HashMap?
+A Map that uses a hash table internally. Main thing is it does not maintain any order of your keys,
+but it lets you find any value instantly if you know its key.
+## What Is TreeMap?
+A Map that uses a tree structure internally. Main thing is it automatically sorts all your keys in an ascending order.
+------------------------------
+## Big-O Cheat Sheet for Performance
 
-        Why we need it ?
-        because for specific requirements if i want list structure or stack structure why should i make every data structure from
-        scratch instead java provides collection frameworks which has all data structures you want to use
+| Data Structure | Search / Access Time | Insert / Delete Time | Main Use Case |
 
+| ArrayList | O(1) Fast | O(N) Slow | When you need to read data by index frequently. |
+| LinkedList | O(N) Slow | O(1) Fast | When you are constantly adding or removing items from ends. |
+| HashSet | O(1) Fast | O(1) Fast | When you want absolute unique items and fast lookups. |
+| TreeSet | O(log N) Medium | O(log N) Medium | When you want unique items but they must stay sorted. |
+| PriorityQueue | O(1) for Top element | O(log N) Medium | When you always need the minimum or maximum item next. |
+| HashMap | O(1) Fast | O(1) Fast | When you need to look up values instantly using a unique key. |
+| TreeMap | O(log N) Medium | O(log N) Medium | When you need key-value pairs but keys must stay sorted. |
 
-   What is List?
-   A List is simple ordered items collection in a way it is inserted and duplicated are allowed in list
-
-   What Is ArrayList?
-   A List implemented using an internal array.
-   main thing is array list is not fixed size it resize automatically
-
-   What is LinkedList?
-   A linked list is a linear data structure where elements are not stored in side-by-side memory locations.
-   Instead, it forms a chain of separate items called nodes,
-   where each node points to the next one using a reference or pointer.
-
-   [ Data | Next ] ---> [ Data | Next ] ---> [ Data | NULL ]
 
